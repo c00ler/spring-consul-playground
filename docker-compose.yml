@@ -1,0 +1,10 @@
+version: '3'
+services:
+  consul-dev:
+    image: "consul:1.1.0"
+    container_name: "dev-consul"
+    environment:
+      - CONSUL_UI_BETA=true
+    ports:
+      - "8400:8400"
+      - "8500:8500"
