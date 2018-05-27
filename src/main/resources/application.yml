@@ -7,3 +7,17 @@ spring:
         enabled: false
       ok:
         enabled: false
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - health
+          - info
+          - configprops
+          - refresh
+
+togglz:
+  console:
+    enabled: false

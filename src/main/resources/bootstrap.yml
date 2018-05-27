@@ -5,13 +5,3 @@ spring:
     consul:
       host: localhost
       port: ${consul.port:8500}
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include:
-          - health
-          - info
-          - configprops
-          - refresh
